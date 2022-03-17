@@ -16,5 +16,19 @@ p{
   width: 40%;
   height: 80%;
   border-radius: 3px;
-  padding: 1rem;  
+}
+
+.header-main-box{
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: rgb(153, 153, 153);
+  padding: 10px;
+}
+
+#hamburguer-menu-icon{
+  cursor: pointer;
+}
+
+.main-box-container{
+  padding: 1rem;
 }
