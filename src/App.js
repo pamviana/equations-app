@@ -1,9 +1,12 @@
-import './App.css';
+import "./App.css";
+import HomePage from "./components/HomePage/home-page.component";
 
 function App() {
   return (
     <div className="App">
-      <p>Equations</p>
+      <div className="center-main-box">        
+        <HomePage />
+      </div>
     </div>
   );
 }
