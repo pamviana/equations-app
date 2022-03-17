@@ -9,6 +9,7 @@ function Cards(props) {
   return (
     <div className="card-section">
     <DropZone/>
+    
     {/*
       <div className="upload-box card-wrapper">
         <img alt="upload icon" src={PictureIcon} />
