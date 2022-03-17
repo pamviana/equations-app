@@ -9,7 +9,6 @@ function Cards(props) {
   return (
     <div className="card-section">
     <DropZone/>
-    {/*
       <div className="upload-box card-wrapper">
         <img alt="upload icon" src={PictureIcon} />
         <p>Upload Your Picture</p>
@@ -22,7 +21,6 @@ function Cards(props) {
         <img alt="type icon" src={TypeIcon} />
         <p>Type Your Equation</p>
       </div>
-    */}
     </div>
   );
 }
