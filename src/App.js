@@ -11,6 +11,7 @@ function App() {
           <img id="hamburguer-menu-icon" alt="menu icon" src={HamburguerMenu}/>
         </header>
         <main className="main-box-container">
+        <p>Test</p>
           <HomePage />
         </main>
       </div>
