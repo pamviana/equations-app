@@ -4,8 +4,11 @@
     padding: 10px;
     margin-bottom: 10px;
     cursor: pointer;
+    display: flex;
+    gap: 10px;    
 }
 
 .card-wrapper:hover{
-    border: 2px solid #0c4388;
+    border: 1px solid #0c4388;
+    background-color: rgba(255, 255, 255, 0.171);
 }
