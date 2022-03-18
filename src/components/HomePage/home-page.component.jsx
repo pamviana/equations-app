@@ -1,12 +1,17 @@
 import React from "react";
 import Cards from "../Cards/cards.component";
 import "./home-page.styles.css";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import UpdatePicture from "../UpdatePicture/drop-zone.component";
 
 function HomePage() {
   return (
-    <>
-      <Cards />
-    </>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Cards />} />
+        <Route path="/upload" element={<UpdatePicture />} />
+      </Routes>
+    </Router>
   );
 }
 

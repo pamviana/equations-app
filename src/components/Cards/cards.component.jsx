@@ -3,13 +3,16 @@ import "./cards.styles.css";
 import PictureIcon from "../../images/image-icon.svg";
 import CameraIcon from "../../images/camera-icon.svg";
 import TypeIcon from "../../images/type-icon.svg";
-import DropZone from '../DropZone/drop-zone.component';
+import UpdatePicture from "../UpdatePicture/drop-zone.component";
+import { useNavigate  } from "react-router-dom";
+
 
 function Cards(props) {
+  let navigate = useNavigate();
+
   return (
     <div className="card-section">
-    <DropZone/>
-      <div className="upload-box card-wrapper">
+      <div className="upload-box card-wrapper" onClick={()=> navigate("/upload")}>
         <img alt="upload icon" src={PictureIcon} />
         <p>Upload Your Picture</p>
       </div>
