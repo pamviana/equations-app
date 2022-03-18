@@ -10,8 +10,7 @@ function App() {
         <header className="header-main-box">
           <img id="hamburguer-menu-icon" alt="menu icon" src={HamburguerMenu}/>
         </header>
-        <main className="main-box-container">
-        <p>Test</p>
+        <main className="main-box-container">        
           <HomePage />
         </main>
       </div>
