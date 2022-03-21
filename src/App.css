@@ -5,6 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+    background-size: cover;
 }
 
 p{
@@ -12,8 +14,8 @@ p{
 }
 
 .center-main-box{
-  background-color: rgba(255, 255, 255, 0.842);
-  width: 40%;
+  background-color: rgb(212, 212, 212);
+  width: 30%;
   height: 80%;
   border-radius: 3px;
 }
