@@ -12,6 +12,7 @@ function HomePage() {
         
     <Router>
       <Routes>
+      
         <Route exact path="/" element={<Cards />} />
         <Route path="/upload" element={<UpdatePicture />} />
         <Route path="/result" element={<Result/>}/>
