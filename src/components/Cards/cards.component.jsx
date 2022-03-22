@@ -16,11 +16,11 @@ function Cards(props) {
         <img alt="upload icon" src={PictureIcon} />
         <p>Upload Your Picture</p>
       </div>
-      <div className="camera-box card-wrapper">
+      <div className="camera-box card-wrapper" onClick={()=> navigate("/camera")}>
         <img alt="camera icon" src={CameraIcon} />
         <p>Take a Picture</p>
       </div>
-      <div className="type-box card-wrapper">
+      <div className="type-box card-wrapper" onClick={()=> navigate("/type")}>
         <img alt="type icon" src={TypeIcon} />
         <p>Type Your Equation</p>
       </div>
