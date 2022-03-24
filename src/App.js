@@ -12,8 +12,11 @@ import CloseIcon from "./images/close-x.svg";
 
 function App() {
   const [sidebar, setSidebar] = useState(false);
-  const handleClickSidebar = () => setSidebar(!sidebar);
-
+  const handleClickSidebar = e => {
+    e.preventDefault();
+    setSidebar(!sidebar);
+  }
+  
   return (
     <div className="App">
       <Router>
