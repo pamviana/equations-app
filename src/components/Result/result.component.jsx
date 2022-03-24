@@ -2,6 +2,7 @@ import React from "react";
 import "./result.styles.css";
 
 function Result() {
+  
   return (
     <section className="result-box">
       <div className="equation-container">
