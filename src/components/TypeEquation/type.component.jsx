@@ -24,6 +24,7 @@ function TypeEquation(props) {
         <p className="examples-equations">(x^3+4)*(x^(1/2))=0</p>
         <p className="examples-equations">(7*8)/2</p>
         <p className="examples-equations">x=2-13+2^5</p>
+        <p className="examples-equations">y=x^2+2x+8</p>
       </section>
     </div>
   );
