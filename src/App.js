@@ -12,8 +12,11 @@ import CloseIcon from "./images/close-x.svg";
 
 function App() {
   const [sidebar, setSidebar] = useState(false);
-  const handleClickSidebar = () => setSidebar(!sidebar);
-
+  const handleClickSidebar = e => {
+    e.preventDefault();
+    setSidebar(!sidebar);
+  }
+  
   return (
     <div className="App">
       <Router>
@@ -25,14 +28,16 @@ function App() {
               src={HamburguerMenu}
               onClick={handleClickSidebar}
             />
-            <div className={sidebar ? "sidebar-filler active" : "sidebar-filler"}></div>
-            <nav
-              className={sidebar ? "side-menu active" : "side-menu"}              
-            >
-            
-              <span className="close-icon sidebar-icon" onClick={handleClickSidebar}></span>
+            <div
+              className={sidebar ? "sidebar-filler active" : "sidebar-filler"}
+            ></div>
+            <nav className={sidebar ? "side-menu active" : "side-menu"}>
+              <span
+                className="close-icon sidebar-icon"
+                onClick={handleClickSidebar}
+              ></span>
 
-              <ul className="sidebar-container">
+              <ul className="sidebar-container" onClick={handleClickSidebar}>
                 <Link to="/">Home</Link>
                 <Link to="/upload">Upload a Picture</Link>
                 <Link to="/camera">Take a Picture</Link>

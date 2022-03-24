@@ -23,7 +23,7 @@
     font-size: 1.1rem;
 }
 
-.button-steps{
+.button-steps, .button{
     width: 100%;
     padding: 5px;
     border-radius: 3px;
