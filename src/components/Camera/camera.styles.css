@@ -1,0 +1,8 @@
+.camera-section{
+    position: relative;
+}
+.camera__button{
+    position: absolute;
+    bottom: 5%;
+    right: calc(50% - 15px);
+}
