@@ -5,7 +5,7 @@ import cloud from '../../images/cloud.svg';
 import uploaded from '../../images/uploaded.svg';
 import { useNavigate  } from "react-router-dom";
 
-function UpdatePicture() {
+function UploadPicture() {
   let navigate = useNavigate();
   
   async function onAcceptedDrop(acceptedFile) {
@@ -43,4 +43,4 @@ function UpdatePicture() {
   );
 }
 
-export default UpdatePicture;
+export default UploadPicture;
