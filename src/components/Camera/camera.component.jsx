@@ -16,7 +16,7 @@ function Camera({setCapturedImg}) {
     console.log(imageSrc);
     setCapturedImg(imageSrc);
     navigate("/picture-taken")
-  }, []);
+  }, [webcamRef, navigate, setCapturedImg]);
   
   return (
     <div className="camera-section">
