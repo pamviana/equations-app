@@ -3,7 +3,6 @@ import "./cards.styles.css";
 import PictureIcon from "../../images/image-icon.svg";
 import CameraIcon from "../../images/camera-icon.svg";
 import TypeIcon from "../../images/type-icon.svg";
-import UpdatePicture from "../UpdatePicture/drop-zone.component";
 import { useNavigate  } from "react-router-dom";
 
 

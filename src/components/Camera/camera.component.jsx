@@ -1,25 +1,27 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import "./camera.styles.css";
 import Webcam from "react-webcam";
-import CameraButton from '../../images/camera-button.svg'
+import { useNavigate } from 'react-router-dom'
 
-function Camera() {
-    const [capturedImg, setCapturedImg] = useState(null);
+function Camera({setCapturedImg}) {
     const videoConstraints = {
         
       };
 
   const webcamRef = useRef(null);
+  let navigate = useNavigate();
+
   const capture = useCallback(() => {
     const imageSrc = webcamRef.current.getScreenshot();
-    //console.log(imageSrc);
+    console.log(imageSrc);
     setCapturedImg(imageSrc);
-  }, [webcamRef]);
+    navigate("/picture-taken")
+  }, []);
   
   return (
     <div className="camera-section">
-      <Webcam width={"100%"} ref={webcamRef} screenshotFormat="image/jpeg" videoConstraints={videoConstraints}/>
-      <img alt="camera button" src={CameraButton} onClick={capture} className="camera__button"/>
+      <Webcam width={"100%"} height={"100%"} ref={webcamRef} screenshotFormat="image/jpeg" videoConstraints={videoConstraints}/>
+      <button onClick={capture} className="camera__button"></button>
     </div>
   );
 }
