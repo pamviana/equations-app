@@ -27,20 +27,17 @@ function TypeEquation(props) {
         onChange={(mathField) => {
           setLatex(mathField.latex());
         }}
-      />         
+      />     
+      {latex}    
         <button
           className="submit-type-equation button"
           onClick={(e) => navigate("/result")}
-        >
+        >        
           Submit
         </button>
       </section>
       <section className="examples-type-section">
         <p className="title-examples">Examples:</p>
-        <p className="examples-equations">(2^3+4)*(9^(1/2))=0</p>
-        <p className="examples-equations">(7*8)/2</p>
-        <p className="examples-equations">2-13+2^5</p>
-        <p className="examples-equations">y=x^2+2x+8</p>
       </section>
     </div>
   );
