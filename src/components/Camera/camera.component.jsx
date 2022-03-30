@@ -4,9 +4,7 @@ import Webcam from "react-webcam";
 import { useNavigate } from 'react-router-dom'
 
 function Camera({setCapturedImg}) {
-    const videoConstraints = {
-        
-      };
+    const videoConstraints = {};
 
   const webcamRef = useRef(null);
   let navigate = useNavigate();
