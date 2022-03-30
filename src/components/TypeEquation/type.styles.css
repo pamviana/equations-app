@@ -3,8 +3,15 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    height: 100%;
     justify-content: space-between;
+}
+
+.editor {
+    height: 30%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
 }
 
 .first-block-type-equation{
@@ -19,15 +26,6 @@
     text-align: center;
 }
 
-.input-type{
-    width: 90%;
-    min-width: 160px;
-    padding: 5px;
-    resize: none;
-    border: 0;
-    background-color: #f8f8f8;
-    border-radius: 3px;
-}
 
 .submit-type-equation{
     width: 150px;
